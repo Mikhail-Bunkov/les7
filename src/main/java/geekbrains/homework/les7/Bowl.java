@@ -8,7 +8,8 @@ public class Bowl {
     public void decreaseFood(int n) {
         if (food<n)
         {
-            System.out.println("Еды меньше чем эта скотина хочет съесть");
+            System.out.println("Еды меньше чем эта скотина хочет съесть, поэтому тарелка кота даже не привлекает");
+
             return;
         }
         food -= n;
@@ -23,5 +24,10 @@ public class Bowl {
     public void addFood(int food)
     {
         this.food+=food;
+    }
+    public void autoExtraAddFood()
+    {
+        this.food+=1;
+        addFood(this.food*2);
     }
 }

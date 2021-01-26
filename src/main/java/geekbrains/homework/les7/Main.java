@@ -3,7 +3,7 @@ package geekbrains.homework.les7;
 public class Main {
     public static void main(String[] args) {
         Cat[] cats = new Cat[3];
-        Bowl bowl = new Bowl(10);
+        Bowl bowl = new Bowl(1);
         cats[0] = new Cat("Барсик", 5);
         cats[1] = new Cat("Жирора", 35);
         cats[2] = new Cat("Кощей", 2);
